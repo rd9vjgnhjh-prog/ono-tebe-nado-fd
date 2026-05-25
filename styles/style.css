@@ -393,7 +393,6 @@ footer {
 
 .footer__menu {
     position: absolute;
-    width: 163.9px;
     height: 64px;
     left: calc(50% - 163.9px/2 + 0.55px);
     top: 1px;
@@ -411,6 +410,58 @@ footer {
     line-height: 21px;
     text-align: center;
     color: #000000;
+}
+
+.footer__social-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 48px;
+    position: absolute;
+    width: 240px;
+    height: 48px;
+    right: 50px;
+    top: 1px;
+    list-style: none;
+}
+
+.footer__social-list-item {
+    box-sizing: border-box;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 0px;
+    top: 0px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+
+.youtube {
+    width: 48px;
+    height: 48px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background: url(/images/yt.svg);
+}
+
+.vk {
+    width: 48px;
+    height: 48px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    background: url(/images/vk.svg);
+}
+
+.pinterest {
+    width: 48px;
+    height: 48px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    background: url(/images/pinterest.svg);
 }
 
 .pixel-perfect-image {
