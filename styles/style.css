@@ -3,21 +3,19 @@ header {
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
     background-color: #FFFFFF;
-    max-height: 293px;
 }
 
 .header__links-list {
     display: flex;
     justify-content: flex-start;
     gap: 28px;
-    margin: 133px auto 138px 50px;
+    margin: 133px auto 130px 50px;
     padding-bottom: 5px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
     line-height: 100%;
-    letter-spacing: 0%;
     list-style: circle;
 }
 
@@ -38,7 +36,7 @@ header {
 }
 
 .header__logo-image {
-    margin: 92px auto 96px;
+    margin: 92px auto 91px;
     width: 148px;
     height: 105px;
 }
@@ -54,11 +52,10 @@ header {
     font-style: normal;
     font-size: 18px;
     line-height: 24.3px;
-    letter-spacing: 0%;
 }
 
 .header__address {
-    margin: 95px 50px 100px 184px;
+    margin: 95px 50px 95px 184px;
     padding: 0 5px 5px 3px;
 
 }
@@ -66,7 +63,7 @@ header {
 .cover {
     position: relative;
     min-height: 757px;
-    z-index: -1;
+    z-index: 0;
     background: url(/images/cover.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -171,6 +168,7 @@ header {
 
 .lots__card-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
     padding-top: 27px;
     padding-bottom: 30px;
@@ -179,7 +177,7 @@ header {
 .lots__card-list-item {
     list-style: none;
     min-height: 596px;
-    min-width: 334px;
+    max-width: 334px;
 }
 
 .card-link {
@@ -189,7 +187,6 @@ header {
 
 .card {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     position: relative;
     min-height: 100%;
@@ -300,6 +297,7 @@ footer {
     grid-auto-flow: column;
     grid-template-columns: 400px 300px 400px;
     margin-top: 180px;
+    margin-bottom: 82px;
 }
 
 .footer-address {
@@ -339,7 +337,7 @@ footer {
     height: 48px;
 }
 
-/* Стили для макета готовой страницы.
+/* Стили для макета готовго сайта
 .pixel-perfect-image {
     position: absolute;
     width: 1100px;
